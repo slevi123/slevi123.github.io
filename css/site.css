@@ -6,18 +6,56 @@ a {
   text-decoration: none;
 }
 
+body {
+  background: rgb(242, 231, 201);
+}
+
 header {
-  background: pink;
+  background: rgb(231, 239, 197);
   z-index: 999;
   width: 100%;
   display: block;
-  height: 90px;
   position: fixed;
   top: 0;
+  height: 50px;
+}
+header .logo {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2em;
+  display: inline;
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header #top-menu {
+  float: right;
+  display: inline;
+  padding-right: 30px;
 }
 
 main {
-  margin-top: 90px;
+  padding-bottom: 3em; /* Footer height */
+}
+
+#page-container {
+  padding-top: 50px;
+  position: relative;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+footer {
+  background: rgb(65, 60, 88);
+  width: 100%;
+  margin-top: auto;
+  color: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em; /* Footer height */
 }
 
 #projects {
@@ -27,7 +65,7 @@ main {
   padding-left: 50px;
   padding-bottom: 200px;
   white-space: nowrap;
-  background: rgba(0, 170, 255, 0.34);
+  background: rgb(169, 192, 195);
 }
 #projects::-webkit-scrollbar {
   display: none;
@@ -36,7 +74,7 @@ main {
   display: inline-block;
   text-align: center;
   border-radius: 25px;
-  background: rgb(159, 117, 117);
+  background: rgb(65, 60, 88);
   padding: 30px;
   color: white;
   margin-left: 80px;

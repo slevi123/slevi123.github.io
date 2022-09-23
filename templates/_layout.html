@@ -17,16 +17,25 @@
 
 <body>
     <header>
-        <a class="logo">Leswell</a>
-        <div id="top-menu">
+        <a class="logo">Simofi Levente</a>
+        <nav id="top-menu">
             <p>about</p>
-        </div>
+        </nav>
     </header>
 
-    <main> 
-        {% block content %}
-        {% endblock content %} 
-    <main>
+        <div id="page-container">
+
+        <main> 
+            {% block content %}
+            {% endblock content %} 
+            <p> </p>
+        </main>
+
+        <footer>
+            <p> Simofi Levente 2022 <i class="fa fa-copyright" aria-hidden="true"></i></p>
+        </footer>
+
+    </div>
 
     {% block after_footer %}
     {% endblock after_footer %}

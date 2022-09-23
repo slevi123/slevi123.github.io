@@ -1,29 +1,69 @@
-$header-height: 90px;
+@use 'variables';
+
+$header-height: 50px;
+$header-color: variables.$fcolor-1;
+$footer-color: variables.$fcolor-2;
+$footer-height: 3em;
+
+body {
+    background: variables.$fcolor-5;
+}
 
 header {
-    background: pink;
+    background: $header-color;
     z-index: 999;
     width: 100%;
 
     display: block;
-    height: $header-height;
     position: fixed;
+    top: 0;
+    height: $header-height;
 
     // transition: top 0.2s ease-in-out; // TODO: find out
 
-    top: 0;
 
-    // .logo {
-    //     display: inline;
-    //     float: left;
-    // }
+    .logo {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 2em;
 
-    // #top-menu {
-    //     float: right;
-    //     display: inline;
-    // }
+        display: inline;
+        float: left;
+        margin-left: 20px;
+
+        // center vertically
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #top-menu {
+        float: right;
+        display: inline;
+        padding-right: 30px;
+    }
 }
 
 main {
-    margin-top: $header-height;
+    padding-bottom: $footer-height;    /* Footer height */
+}
+
+#page-container {
+    padding-top: $header-height;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+footer {
+    background: $footer-color;
+    width: 100%;
+    margin-top: auto;
+    color: white;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;            /* Footer height */
+
 }
