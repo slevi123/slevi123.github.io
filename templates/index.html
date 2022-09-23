@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends '_layout.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Project Portfolio</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/site.css">
-
-
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/c09802af99.js" crossorigin="anonymous"></script>
-
-    
-    
-</head>
-
-<body>
-    <header>
-        <a class="logo">Leswell</a>
-        <div id="top-menu">
-            <p>about</p>
-        </div>
-    </header>
-
-    <main> 
-        
+{% block content %}
     <section id="projects">
         <h2>Projects by me</h2>
         <div class="project-card">
@@ -51,12 +27,9 @@
         </story-line>
     </section>
     
- 
-    <main>
+{% endblock content %}
 
-    
+
+{% block after_footer %}
     <script src="js/projects.js"></script>
-
-</body>
-
-</html>
+{% endblock after_footer %}*

@@ -1,0 +1,29 @@
+$header-height: 90px;
+
+header {
+    background: pink;
+    z-index: 999;
+    width: 100%;
+
+    display: block;
+    height: $header-height;
+    position: fixed;
+
+    // transition: top 0.2s ease-in-out; // TODO: find out
+
+    top: 0;
+
+    // .logo {
+    //     display: inline;
+    //     float: left;
+    // }
+
+    // #top-menu {
+    //     float: right;
+    //     display: inline;
+    // }
+}
+
+main {
+    margin-top: $header-height;
+}

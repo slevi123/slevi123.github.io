@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: pink;
+  z-index: 999;
+  width: 100%;
+  display: block;
+  height: 90px;
+  position: fixed;
+  top: 0;
+}
+
+main {
+  margin-top: 90px;
+}
+
+#projects {
+  overflow-x: auto;
+  overflow-y: visible;
+  height: max-content;
+  padding-left: 50px;
+  padding-bottom: 200px;
+  white-space: nowrap;
+  background: rgba(0, 170, 255, 0.34);
+}
+#projects::-webkit-scrollbar {
+  display: none;
+}
+#projects .project-card {
+  display: inline-block;
+  text-align: center;
+  border-radius: 25px;
+  background: rgb(159, 117, 117);
+  padding: 30px;
+  color: white;
+  margin-left: 80px;
+}
+#projects .project-card a {
+  color: white;
+}
+#projects .other-side-card {
+  position: relative;
+  top: 266px;
+}
+#projects story-line {
+  display: block;
+  border-top: 10px solid red;
+  border-radius: 75px;
+  margin: 50px 0 50px 0;
+  height: 0;
+  width: 20000px;
+}
+#projects story-line mark {
+  display: inline-block;
+  width: 0;
+  border-right: 8px solid red;
+  height: 40px;
+  position: relative;
+}
+#projects story-line mark.main-side-mark {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  top: -50px;
+}
+#projects story-line mark.other-side-mark {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  top: -2px;
+}
+
+/*# sourceMappingURL=site.css.map */

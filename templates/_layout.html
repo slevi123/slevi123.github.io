@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/site.css">
+
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/c09802af99.js" crossorigin="anonymous"></script>
+
+    {% block head %}
+    {% endblock head %}
+</head>
+
+<body>
+    <header>
+        <a class="logo">Leswell</a>
+        <div id="top-menu">
+            <p>about</p>
+        </div>
+    </header>
+
+    <main> 
+        {% block content %}
+        {% endblock content %} 
+    <main>
+
+    {% block after_footer %}
+    {% endblock after_footer %}
+</body>
+
+</html>

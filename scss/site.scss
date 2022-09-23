@@ -1,0 +1,79 @@
+@use 'default';
+@use 'variables';
+
+
+#projects {
+    // project section variables
+    $story_line_color: red;
+    $section_bg_color: rgba(0, 170, 255, 0.34);
+
+    $line_card_distance: 50px;
+    $card_gap: 50px;
+
+    // styles
+    overflow-x: auto;
+    overflow-y: visible;
+    height: max-content;
+    padding-left: $card_gap; // TODO
+    padding-bottom: 200px;
+    white-space: nowrap;
+
+    // hiding the scrollbar
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .project-card {
+        display: inline-block;
+        text-align: center;
+        border-radius: 25px;
+        background: variables.$fcolor-1;
+        padding: 30px;
+
+        color: white;
+
+        a {
+            color: white;
+        }
+
+        margin-left: 80px;
+    }
+
+    .other-side-card {
+        position: relative;
+        top: 266px;
+    }
+
+    story-line {
+        display: block;
+        border-top: 10px solid $story_line_color;
+        border-radius: 75px;
+        margin: $line_card_distance 0 $line_card_distance 0;
+        height: 0;
+        width: 20000px;
+
+        mark {
+            display: inline-block;
+            width: 0;
+            border-right: 8px solid $story_line_color;
+            height: 40px;
+            position: relative;
+                        
+            &.main-side-mark {
+                border-top-left-radius: 25px;
+                border-top-right-radius: 25px;
+                top: -50px;
+            }
+            
+            &.other-side-mark {
+                border-bottom-left-radius: 25px;
+                border-bottom-right-radius: 25px;
+                top: -2px;
+            }
+
+        }
+
+    }
+
+    background: $section_bg_color;
+}
